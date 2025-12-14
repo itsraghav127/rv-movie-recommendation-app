@@ -17,6 +17,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 import { Badge } from "@/components/ui/badge"
 import { CommentSection } from "@/components/comment-section"
 import { SimilarMovies } from "@/components/similar-movies"
+import { MovieTrailer } from "@/components/movie-trailer"
 
 export default function MoviePage() {
   const params = useParams()
@@ -224,6 +225,11 @@ export default function MoviePage() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Trailer Section */}
+        <section className="mx-auto max-w-screen-xl px-4 py-8 md:px-6 lg:px-8">
+          <MovieTrailer movieTitle={movie.Title} year={movie.Year} />
         </section>
 
         {/* Additional Details */}
