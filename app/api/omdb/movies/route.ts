@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
 
-const API_KEY = process.env.OMDB_API_KEY || "demo"
+const API_KEY = "234c7e13"
 const BASE_URL = "https://www.omdbapi.com"
 
 export async function GET(request: NextRequest) {
